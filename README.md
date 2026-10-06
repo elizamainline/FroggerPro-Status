@@ -4,6 +4,8 @@ Mainline Linux hardware support status for the **Nothing Phone (4a) Pro** (`frog
 
 This repository tracks the current state of the mainline Linux bring-up.
 
+This is an active bring-up project. A component marked **Works** means that its basic functionality has been successfully tested, but it does not necessarily mean that the implementation is production-ready or suitable for daily use.
+
 > [!NOTE]
 > The status describes hardware support on mainline Linux, not Android / Nothing OS compatibility.
 
@@ -31,24 +33,23 @@ This repository tracks the current state of the mainline Linux bring-up.
 | Ultrawide camera | ✅ Works | Camera capture works |
 | Telephoto camera | ✅ Works | Camera capture works |
 | Front camera | ✅ Works | Camera capture works |
+| Camera actuators | ✅ Works | Lens actuators / autofocus control work |
 | Camera flash | ✅ Works | LED camera flash works |
 | Proximity sensor | ✅ Works | Proximity sensing works |
 | Ambient light sensor | ✅ Works | Ambient light sensing works |
 | Accelerometer | ✅ Works | Accelerometer works |
 | Gyroscope | ✅ Works | Gyroscope works |
 | Magnetometer | ✅ Works | Magnetometer works |
+| NFC | ✅ Works | NFC works |
+| GPS / GNSS | ✅ Works | GNSS positioning works |
+| Glyph Matrix | ✅ Works | Glyph Matrix works |
 | SIM detection | ✅ Works | SIM cards are detected |
 | SMS | ✅ Works | SMS messaging works |
 | Mobile data | ✅ Works | Cellular data works |
 | 5G | ✅ Works | 5G connectivity has been successfully tested |
 | Modem | ⚠️ Partial | SIM detection, SMS and mobile data, including 5G, work; overall modem stability and remaining telephony functionality still need more testing |
-| NFC | ⚠️ Partial | Controller communicates, but NCI/polling still has issues |
-| Camera actuators | ❌ Broken | Lens actuators / autofocus control are not working yet |
 | Fingerprint reader | ❌ Broken | Not working |
-| Automatic brightness | ❌ Broken | Automatic brightness control is not working |
-| DisplayPort / USB-C video | ❌ Broken | Not expected to work; the device only exposes USB 2.0 |
 | Calls | ❔ Untested | Voice calls have not been tested yet |
-| GPS / GNSS | ❔ Untested | Not tested yet |
 | Suspend / resume | ❔ Untested | Not tested yet |
 | Deep sleep | ❔ Untested | Not tested yet |
 | Thermal management | ❔ Untested | Not fully tested yet |
@@ -74,16 +75,6 @@ This repository tracks the current state of the mainline Linux bring-up.
 | **Display** | 1260 × 2800 AMOLED, up to 144 Hz |
 | **Memory** | 8 / 12 GB LPDDR5X |
 | **Storage** | UFS 3.1 |
-
-## Notes
-
-This is an active bring-up project. A component marked **Works** means that its basic functionality has been successfully tested, but it does not necessarily mean that the implementation is production-ready or suitable for daily use.
-
-A large part of the hardware is already functional, including accelerated graphics, display, audio, microphones, Wi-Fi, Bluetooth, sensors, USB host mode, battery charging, cameras, SMS and cellular data.
-
-The main areas still requiring work are the **modem stack, NFC and camera actuators**. All camera sensors can capture images, but lens actuator / autofocus control is not working yet.
-
-DisplayPort / USB-C video output is not expected to become available because FroggerPro exposes only USB 2.0.
 
 ## Disclaimer
 
