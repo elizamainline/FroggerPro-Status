@@ -48,11 +48,11 @@ This is an active bring-up project. A component marked **Works** means that its 
 | Mobile data | ✅ Works | Cellular data works |
 | 5G | ✅ Works | 5G connectivity has been successfully tested |
 | Suspend / resume | ✅ Works | Suspend and resume work |
+| Thermal management | ✅ Works | Temperature sensors and CPU/GPU cooling devices work; CPU stress-tested successfully. Thermal throttling not explicitly tested. |
 | Modem | ⚠️ Partial | SIM detection, SMS and mobile data, including 5G, work; voice calls do not work |
 | Deep sleep | ⚠️ Partial | Deep sleep support is not yet fully working |
 | Fingerprint reader | ❌ Broken | Not working |
 | Calls | ❌ Broken | Voice calls do not work |
-| Thermal management | ❔ Untested | Not fully tested yet |
 
 ### Legend
 
